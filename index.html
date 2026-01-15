@@ -10,13 +10,21 @@
             box-sizing: border-box;
             padding: 0;
             margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        body{
+            scroll-behavior: smooth;
         }
         .navbar{
             display: flex;
             justify-content: space-between;
             background: black;
-            padding: 50px 40px;
             color: white;
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            padding: 30px 40px;
         }
 
         .navbar nav a{
@@ -175,12 +183,12 @@
         </nav>
     </section>
 
-    <header class="banner">
+    <header class="banner" id="home">
         <h1>"Berikut adalah aktivitas saya selama liburan selama 1 bulan"</h1>
         <a href="#daily">Klik</a>
     </header>
 
-    <div class="container-card">
+    <div class="container-card" id="daily">
         <div class="card">
             <img src="orang-bangun.jpg" alt="">
             <h1>Bangun Tidur</h1>
